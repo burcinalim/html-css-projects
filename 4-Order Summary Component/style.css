@@ -1,0 +1,150 @@
+:root{
+
+--desaturated_blue: hsl(224, 23%, 55%);
+--dark_blue: hsl(223, 47%, 23%);
+---pale_blue: hsl(225, 100%, 94%);
+--bright_blue: hsl(245, 75%, 52%);
+}
+
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0; 
+    font-family: 'Red Hat Display', sans-serif;
+
+}
+body{
+    background:#e0e8ff url(images/pattern-background-desktop.svg) no-repeat;
+    background-size: contain;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    height: 100vh;
+}
+
+.card{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    flex-direction: column;
+    border: none solid;
+    border-radius: 1rem;
+    width: 20rem;
+    height: 30rem;
+    background-color: white;
+    box-shadow: 0 10px 20px #291f9941;
+}
+.head-img{
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+    border-top-right-radius: 1rem;
+    border-top-left-radius:1rem;
+}
+.card-body{
+    text-align: center;
+    width: 100%;
+    height: 100%;
+    margin: 2rem;
+    padding: 1.2rem;
+    
+}
+.card-body__header{
+    font-size: 1.5rem;
+    font-weight: 900px;
+    margin-top: -1rem;
+}
+.card-body__adv{
+    font-size: 0.8rem;
+    font-weight: 500;
+    line-height: 1.2rem;
+    color: #8b8ea2;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+}
+
+.plan-details{
+    background-color: #f8f9fe;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    border-radius: 0.5rem;
+    width: 100%;
+    height: 5rem;
+    margin: 1rem 0;
+}
+.plan-details p{
+    position: relative;
+    left: -1.5rem;
+    line-height: 1.2rem;
+    font-size: 0.8rem;
+    font-weight:700;
+    
+}
+.plan-price{
+    font-weight: 500;
+    color: #8b8ea2;
+    
+}
+.plan-details img{
+    width: 2.4rem;
+    position: relative;
+    left: -0.1rem;
+}
+.plan-details a{
+    font-size: 0.8rem;
+    font-weight: 700;
+    color: var(--bright_blue);
+    text-decoration: none;
+}
+.plan-details a:hover{
+    color: #766cf1;
+}
+.proceedBtn{
+    width: 100%;
+    height: 15%;
+    border-radius: 0.5rem;
+    border: none;
+    background-color: var(--bright_blue);
+    color: white;
+    margin-bottom: 0.7rem;
+    text-wrap: nowrap;
+    cursor: pointer;
+    box-shadow: 0 10px 20px #291f9941;
+    font-size: 0.9rem;
+}
+.proceedBtn:hover{
+    background-color: #766cf1;
+}
+.cancelBtn{
+    border: none;
+    cursor: pointer;
+    font-weight: 700;
+    font-size: 0.7rem;
+    color: #8b8ea2;
+    text-decoration: none;
+}
+.cancelBtn:hover{
+    color: #1b2b4d;
+  }
+
+  /*----------------------------------- MOBILE DESIGN ----------------------------------------------------*/
+  @media (max-width:375px){
+    .card{
+        height: 32rem;
+    }
+    .card-body__adv{
+        font-size: 1.05rem;
+        line-height: 1.5rem;
+        color: #8b8ea2;
+        margin-bottom: 1.5rem;
+    }
+    .proceedBtn{
+        margin-bottom: 0.6rem;
+    }
+    .cancelBtn{
+        margin-bottom: 2rem;
+    }
+  }
